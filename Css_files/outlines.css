@@ -1,0 +1,29 @@
+
+body > * {
+    background: rgba(201, 233, 255, 1);;
+    box-shadow: 0 0 0 2px lightblue;
+}
+
+header,
+main,
+footer {
+    box-shadow: 0 0 0 2px black;
+}
+
+nav,
+section,
+article
+ {
+    box-shadow: 0 0 0 2px black;
+}
+
+.social-icon {
+    height: 32px;
+    width: 32px;
+}
+.desc {
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
