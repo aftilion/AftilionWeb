@@ -45,7 +45,6 @@ nav ul {
 nav ul li {
     margin-right: 40px;
     font-size: 20px;
-    text-decoration: none;
 }
 
 header a {
@@ -57,6 +56,7 @@ header a {
 section {
     padding: 40px 80px;
     height: 100vh;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .content {
     min-height: 100vh;
@@ -69,7 +69,6 @@ section {
     max-width: 1230px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 .content__container {
@@ -94,11 +93,11 @@ section {
 
 .content__subtitle {
     font-size: 24px;
-    font-weight: 400;
 }
 
 .content__li {
-
+    font-size: 22px;
+    line-height: 1.1;
 }
 
 .content__description {
@@ -154,7 +153,6 @@ section {
 
     .content__description {
         font-size: 14px;
-        text-decoration: none;
     }
 
 
@@ -190,4 +188,53 @@ section {
     100% {
         border-radius: 21% 90% 29% 76% / 43% 54% 46% 57%;
     }
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
+form {
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    margin: 2px;
+    padding: 10px 15px;
+    background: lightgray;
+    color: #FFFFFF;
+    border: 0;
+    width: 500px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+}
+.button {
+    width: 125px;
+    float: right;
+}
+
+form p {
+    font-size: 22px;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100px;
+    background: #f2f2f8;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
