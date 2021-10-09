@@ -1,88 +1,80 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="Афти Александр, M33031, веб , программирование , портфолио , сайт-портфолио">
-    <meta name="description" content="Портфолио веб-разработчика">
-    <link rel="stylesheet" href="Css_files/outlines.css">
-    <title>Афти Александр M33031</title>
-</head>
-<body>
-<header>
-    <nav>
-        <a href="#home">Главная</a>
-        <a href="#about-me">Обо мне</a>
-        <a href="#ascii">ASCII ART</a>
-        <a href="#code-snippet">Code snippet</a>
-        <a href="#favourite-quote">Любимая цитата</a>
-    </nav>
-    <h1>Сайт-Портфолио Афти Александра</h1>
-    </header>
-    <main>
-        <section id="home">
-                <article>
-                    <h1>Привет, я <span>Афти Александр</span>, я предлагаю тебе погрузиться в мой мир!</h1>
-                    <a href="#about-me">Погнали!</a>
-                </article>
-        </section>
-        <section id="about-me">
-            <h2>Обо мне</h2>
-                <img class="desc" src= "myfoto.png" alt="Моя зачетная фоточка">
-                <aside>
-                    Я учусь на 3 курсе программы 09.03.02 университета Итмо , мне 20 лет!
-                </aside>
-            <p>Мои знания</p>
-            <ul>
-                <li>Языки программирования: java,python</li>
-                <li>Алгоритмы и структуры данных</li>
-                <li>ООП</li>
-                <li>API: VK, Telegram</li>
-                <li>Работа с git</li>
-            </section>
-            <section id="ascii">
-                <h2>ASCII картинка</h2>
-                <p>Мое любимое животное это котики!</p>
-                <pre>
-                    _,'|             _.-''``-...___..--';)
-                   /_ \'.      __..-' ,      ,--...--'''
-                  <\    .`--'''       `     /'
-                    `-';'               ;   ; ;
-              __...--''     ___...--_..'  .;.'
-             (,__....----'''       (,..--''
-            </pre>
-            </section>
-        <section id="code-snippet">
-            <h2>Какую первую программу мы запускаем? </h2>
-            <p>Конечно же,<strong>Hello World!</strong></p>
-            <pre>
-                <code>
-                    public class HelloWorld {
-                        public static void main(String[] args) {
-                        System.out.println("Hello, World!");
-                        }
-                    }
-                </code>
-            </pre>
-            <aside>
-                Или ваша программа была другой?
-            </aside>
-        </section>
-            <section id="favourite-quote">
-                <h2>Любимая цитата</h2>
-                <blockquote>
-                    <p>Дело не в размерах игрока, а в размере его сердца.</p>
-                    <cite>Станислав Гольман</cite>
-                </blockquote>
-                <aside>
-                   Вот почему нам так трудно живется!
-                </aside>
-            </section>
-    </main>
-            <footer>
-                    <p><strong>Мои контакты!</strong></p>
-                    <a href="https://www.instagram.com/alalaftiil_tuo_amore/"><img class="social-icon" src="insta.png" alt="Instagram"></a>
-                    <a href="https://t.me/Aftilion"><img class="social-icon" src="telegram.png" alt="Telegram"></a>
-                <p>Афти Александр <span>©2021</span></p>
-            </footer>
+</header>
+<main>
+<section class="content" id="hero">
+    <div class="container content__container">
+        <div class="content__about">
+            <h1 class="content__title">Студент Университета ИТМО</h1>
+            <h2 class="content__subtitle">Афти Александр</h2>
+            <p class="content__description">
+                Привет, это мой сайт портфолио , на нем вы сможете познакомиться со мной
+            </p>
+
+
+            <div class="content__links">
+                <a class="content__link" href="https://vk.com/alexlex_afti2001"><i class='bx bxl-vk'></i></a>
+                <a class="content__link" href="https://t.me/Aftilion"><i class='bx bxl-telegram'></i></a>
+                <a class="content__link" href="https://www.instagram.com/alalaftiil_tuo_amore/"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+
+        <div class="content__box">
+            <img src="myfoto.png" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<section class="content" id="portfolio">
+    <div class="container content__container">
+        <div class="content__about">
+            <h1 class="content__title">Что я знаю и умею?</h1>
+                <ul>
+                    <li class="content__li">Языки программирования: Java,Python(C++,C#)</li>
+                    <li class="content__li">Алгоритмы и структуры данных</li>
+                    <li class="content__li">ООП</li>
+                    <li class="content__li">API: VK, Telegram</li>
+                    <li class="content__li">Работа с git</li>
+                </ul>
+            <p class="content__description">
+                С моими работами вы можешь познакомиться у меня на <a href="https://github.com/aftilion"> <strong>Github <i class='bx bxl-github'></i> </strong></a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="content" id="contact">
+    <div class="container content__container">
+        <div class="content__about">
+            <h1 class="content__title">Связь по почте:</h1>
+            <form action="" >
+                <p>Есть вопросы?</p>
+
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Site Name">
+                <input type="hidden" name="admin_email" value="admin@mail.com">
+                <input type="hidden" name="form_subject" value="Form Subject">
+                <!-- END Hidden Required Fields -->
+
+                <label for="name"></label>
+                <input placeholder="Имя" type="text" name="name" id="name" required="">
+                <label for="email"></label>
+                <input placeholder="Почта" type="email" name="email" id="email" required="">
+                <label for="message"></label>
+                <textarea placeholder="Ваше сообщение" name="message" id="message"></textarea>
+                <label for="submit"></label>
+                <input class="button" type="submit" id="submit" value="Отправить">
+            </form>
+
+            <p class="content__description">
+               <strong> Когда нибудь на сайте появиться бэк, но не сейчас;( </strong>
+            </p>
+        </div>
+    </div>
+</section>
+</main>
 </body>
+<footer>
+    <p>Афти Александр <span>©2021</span></p>
+</footer>
 </html>
