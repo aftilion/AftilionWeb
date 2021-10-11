@@ -22,7 +22,7 @@ h3 {
     margin: 0;
 }
 
-header {
+.header {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     width: 100vw;
     position: fixed;
@@ -35,6 +35,9 @@ header {
     z-index: 100;
 }
 
+.header li {
+    list-style-type: none;
+}
 
 nav ul {
     display: flex;
