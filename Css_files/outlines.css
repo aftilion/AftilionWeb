@@ -22,7 +22,7 @@ h3 {
     margin: 0;
 }
 
-header {
+.header {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     width: 100vw;
     position: fixed;
@@ -35,6 +35,9 @@ header {
     z-index: 100;
 }
 
+.header li {
+    list-style-type: none;
+}
 
 nav ul {
     display: flex;
@@ -130,6 +133,12 @@ section {
     box-shadow: 2px 5px 10px rgba(0, 0, 0, .5);
 }
 
+.content__form {
+    overflow: hidden;
+    max-width: 500px;
+    max-height: 500px;
+    justify-content: center;
+}
 
 
 @media screen and (max-width: 978px) {
@@ -166,11 +175,16 @@ section {
 
     .content__box {
         max-width: 350px;
+        max-height: 350px;
         justify-self: center;
     }
 }
 
-
+.content__form {
+    max-width: 350px;
+    max-height: 350px;
+    justify-self: center;
+}
 
 @keyframes ava-animate {
     0% {
@@ -196,15 +210,6 @@ a.anchor {
     visibility: hidden;
 }
 
-form {
-    top: 50%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 500px;
-    height: 500px;
-    margin: auto;
-}
 
 input, textarea {
     margin: 2px;
