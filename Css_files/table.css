@@ -12,75 +12,90 @@
     white-space: nowrap;
 }
 
+.table caption {
+
+    text-align: center;
+    justify-self: auto;
+    padding: 10px;
+    color: black;
+    background: lightgray;
+    height: 40px;
+    font-size: 20px;
+}
 .table th, .table td{
     text-align: center;
     padding: 10px;
 }
 
 .table th{
-    background-color:lightgray;
-    color: gray;
-}
-
-.table th:nth-child(odd) {
-    background: lightgray;
-}
-
-.table tr:nth-child(even) {
-    background: lightgray;
+    background-color: #9c9c9c;
+    color: black;
+    width: auto;
 }
 
 .table tr{
-    transition: all .3s;
+    transition: all .2s;
+}
+
+.table tr:nth-child(even){
+    background: #dbdbdb ;
+}
+
+.table th:nth-child(odd){
+    background: #828282 ;
 }
 
 .table tr:hover{
-    background-color:#ccc ;
+    background-color:#cccc ;
 }
 
 .table td:not(:last-child){
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #cccccc;
 }
 
 @media screen and (max-width: 978px) {
 
-    .table-2{
+    .table{
         display: block;
         width: 100%;
     }
 
-    .table-2 thead,
-    .table-2 tbody,
-    .table-2 thead th {
+    .table thead,
+    .table tbody,
+    .table thead th {
         display: block;
     }
 
-    .table-2 thead {
+    .table thead {
         float: left;
     }
 
-    .table-2 tbody{
+    .table caption{
+        width: 100%;
+        display: block;
+    }
+    .table tbody{
         overflow-x: auto;
     }
 
-    .table-2 tbody tr {
+    .table tbody tr {
         display: table-cell;
         border-right: 1px solid #ccc;
     }
 
-    .table-2 tbody tr:last-child{
+    .table tbody tr:last-child{
         border-right: none;
     }
 
-    .table-2 td{
+    .table td{
         display: block;
     }
 
-    .table.table-2 td{
+    .table.table td{
         border-right: none;
     }
 
-    .table-2 td, .table-2 th {
+    .table td, .table th {
         padding: 10px 2px;
         box-sizing: border-box;
         overflow: hidden;
