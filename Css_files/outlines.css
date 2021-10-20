@@ -70,6 +70,7 @@ section {
 
 .container {
     max-width: 1530px;
+    width: 100%;
     margin: auto;
 }
 
@@ -88,6 +89,7 @@ section {
 }
 
 .content__slider {
+    display: flex;
     flex-direction: column;
 }
 
@@ -260,4 +262,3 @@ footer {
         display: none;
     }
 }
-
