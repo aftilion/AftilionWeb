@@ -25,6 +25,7 @@ h3 {
 .header {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     width: 100vw;
+    height: 100px;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -62,16 +63,14 @@ section {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .content {
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container {
-    max-width: 1230px;
-    width: 100%;
-    margin: 0 auto;
+    max-width: 1530px;
+    margin: auto;
 }
 
 .content__container {
@@ -86,6 +85,10 @@ section {
     flex-direction: column;
     justify-content: center;
 
+}
+
+.content__slider {
+    flex-direction: column;
 }
 
 .content__title {
@@ -130,6 +133,7 @@ section {
     border: 10px solid #fff;
 
     animation: ava-animate 5s infinite alternate;
+    border: 10px solid #fff;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, .5);
 }
 
@@ -140,8 +144,11 @@ section {
     justify-content: center;
 }
 
-
 @media screen and (max-width: 978px) {
+
+    .header {
+        height: 70px;
+    }
     .content {
         padding-top: 30px;
     }
@@ -178,6 +185,17 @@ section {
         max-width: 350px;
         max-height: 350px;
         justify-self: center;
+    }
+
+    .content__form {
+        justify-self: center;
+    }
+
+}
+
+@media screen and (max-width: 605px) {
+    .header{
+        height: 50px;
     }
 }
 
@@ -232,7 +250,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 100px;
+    height: 50px;
     background: #f2f2f8;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
+@media screen and (max-width:606px) {
+    footer {
+        display: none;
+    }
+}
+
