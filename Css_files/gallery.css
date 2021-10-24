@@ -2,7 +2,8 @@
     overflow:hidden;
     background-color: #f2f2f8;
     display: flow;
-
+    z-index:  99;
+    magin: auto;
 }
 
 .slider_track{
@@ -15,15 +16,14 @@
 }
 
 .slider_box {
-    width: 428px;
-    height: 428px;
-
+    width: 380px;
+    height: 380px;
     overflow: hidden;
 }
 
 .slider_box img {
-    width: 428px;
-    height: 428px;
+    width: 380px;
+    height: 380px;
     border-radius: 50%;
 }
 

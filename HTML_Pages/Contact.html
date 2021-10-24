@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="../Css_files/outlines.css">
+    <link rel="stylesheet" href="../Css_files/table.css">
+    <link rel="stylesheet" href="../Css_files/gallery.css">
+    <script src="../JavaScript/timer.js"></script>
+</head>
+<body>
+<header class="header">
+    <nav>
+        <ul>
+            <li><a id ="main-btn" href="../index.html">Главная</a>"</li>
+            <li><a id ="main-portfolio" href="../HTML_Pages/Portfolio.html">Портфолио</a></li>
+            <li><a id ="main-contact" href="../HTML_Pages/Contact.html">Связаться</a></li>
+            <li><a id ="main-experience" href="../HTML_Pages/Experience.html"> Опыт </a></li>
+            <li><a id ="main-gallery" href="../HTML_Pages/Gallery.html"> Галерея </a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="content" id="contact">
+        <div class="container content__container">
+            <div class="content__about">
+                <h1 class="content__title">Связь по почте:</h1>
+                <form class="content__form" action="" >
+                    <p>Есть вопросы?</p>
+
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="Site Name">
+                    <input type="hidden" name="admin_email" value="admin@mail.com">
+                    <input type="hidden" name="form_subject" value="Form Subject">
+                    <!-- END Hidden Required Fields -->
+
+                    <label for="name"></label>
+                    <input placeholder="Имя" type="text" name="name" id="name" required="">
+                    <label for="email"></label>
+                    <input placeholder="Почта" type="email" name="email" id="email" required="">
+                    <label for="message"></label>
+                    <textarea placeholder="Ваше сообщение" name="message" id="message"></textarea>
+                    <label for="submit"></label>
+                    <input class="button" type="submit" id="submit" value="Отправить">
+                </form>
+
+                <p class="content__description">
+                    <strong> Когда нибудь на сайте появиться бэк, но не сейчас;( Что с гитом поцаны </strong>
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+<footer>
+    <p>Афти Александр <span>©2021</span></p>
+</footer>
+</html>

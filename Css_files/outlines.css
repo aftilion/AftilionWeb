@@ -38,6 +38,7 @@ h3 {
 
 .header li {
     list-style-type: none;
+
 }
 
 nav ul {
@@ -54,8 +55,12 @@ nav ul li {
 header a {
     color: gray;
     text-decoration: none;
+    transition: all .2s;
 }
 
+.header a:hover {
+    color: #4facfe;
+}
 
 section {
     padding: 40px 80px;
