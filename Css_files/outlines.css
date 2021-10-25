@@ -43,17 +43,18 @@ h3 {
 
 nav ul {
     display: flex;
-    padding: 20px 20px 20px 80px;
+    padding: 20px 20px 20px 20px;
     text-transform: capitalize;
 }
 
 nav ul li {
-    margin-right: 40px;
-    font-size: 20px;
+    margin: 0 25px;
 }
 
 header a {
     color: gray;
+    margin: auto;
+    font-size: 22px;
     text-decoration: none;
     transition: all .2s;
 }
@@ -122,7 +123,6 @@ section {
 
 .content__link {
     margin-right: 10px;
-
     font-size: 30px;
     color: #000;
     transition: color 0.3s;
@@ -140,21 +140,29 @@ section {
     border: 10px solid #fff;
 
     animation: ava-animate 5s infinite alternate;
-    border: 10px solid #fff;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, .5);
 }
 
 .content__form {
+    display: flex;
     overflow: hidden;
-    max-width: 500px;
+    flex-direction: column;
     max-height: 500px;
     justify-content: center;
 }
+
+/*.forms {*/
+/*    width: 500px;*/
+/*}*/
 
 @media screen and (max-width: 978px) {
 
     .header {
         height: 70px;
+    }
+
+    header a {
+        font-size: 18px;
     }
     .content {
         padding-top: 30px;
@@ -195,17 +203,42 @@ section {
     }
 
     .content__form {
-        justify-self: center;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    nav ul li {
+        margin: 0 20px;
     }
 
 }
 
-@media screen and (max-width: 605px) {
+@media screen and (max-width: 645px) {
     .header{
         height: 50px;
     }
-}
 
+    header a {
+        font-size: 16px;
+    }
+
+    nav ul li {
+        margin-right:15px;
+    }
+
+}
+@media screen and (max-width: 530px) {
+    nav ul li {
+        margin-right:1px;
+    }
+
+    header a {
+        font-size: 12px;
+    }
+
+}
 .content__form {
     justify-self: center;
 }
@@ -234,9 +267,9 @@ input, textarea {
     background: lightgray;
     color: #FFFFFF;
     border: 0;
-    width: 500px;
     box-sizing: border-box;
     font-size: 16px;
+    max-width: 500px;
 }
 
 
