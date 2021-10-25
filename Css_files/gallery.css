@@ -9,7 +9,6 @@
 .slider_track{
     display:flex;
     align-items: center;
-    justify-content:center;
     text-align: center;
     background-color: #f2f2f8;
     transition: .2s;
