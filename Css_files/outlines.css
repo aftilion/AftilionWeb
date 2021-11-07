@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+*{
+    cursor: url("../Photos/cursor2.png") , pointer;
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -49,19 +53,28 @@ nav ul {
 
 nav ul li {
     margin: 0 25px;
+    display: inline;
+    vertical-align: middle;
 }
 
+
 header a {
-    color: gray;
+    color: grey;
     margin: auto;
     font-size: 22px;
     text-decoration: none;
     transition: all .2s;
 }
 
+
+.header a.clicked{
+   color: black;
+}
+
 .header a:hover {
     color: #4facfe;
 }
+
 
 section {
     padding: 40px 80px;
@@ -300,3 +313,9 @@ footer {
         display: none;
     }
 }
+
+
+.header_now {
+    color: black;
+}
+

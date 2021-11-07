@@ -1,11 +1,17 @@
-(function iife () {
-    const launchTimestamp = Date.now();
+var startTime = 0;
 
-    window.addEventListener('load', () => {
-        const loadTime = Date.now() - launchTimestamp;
-        const newElement = document.createElement('section');
-        newElement.classList.add('content');
-        newElement.innerHTML = `<span>Страница была загружена за <span class="timer">${loadTime} миллисекунд</span></span>`
-        document.querySelector('.page-header').insertAdjacentElement('afterend', newElement);
-    })
+(function() {
+    startTime = (new Date).getTime();
 })();
+
+var nowPageMenu = document.URL.split('/').at(-1).split('.')[0];
+
+window.onload = function() {
+    var endTime = (new Date).getTime();
+    var footer = document.querySelector('footer');
+    footer.textContent += endTime - startTime + 'ms.';
+}
+// $('.list').on('click', 'li', function() {
+//     $(this).closest('.list').find('li').removeClass('active');
+//     $(this).addClass('active');
+// });
