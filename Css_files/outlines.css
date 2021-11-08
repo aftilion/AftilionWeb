@@ -313,5 +313,6 @@ footer {
 .header_now {
     color: black;
     font-size: 22.5px;
+    text-decoration: underline;
 }
 
