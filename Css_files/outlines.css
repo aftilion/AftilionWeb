@@ -73,7 +73,7 @@ header a {
 
 section {
     padding: 40px 80px;
-    height: 100vh;
+    min-height: 100vh;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .content {
@@ -173,7 +173,7 @@ section {
         font-size: 18px;
     }
     .content {
-        padding-top: 30px;
+        padding-top: 100px;
     }
 
     .content__container {
@@ -315,4 +315,26 @@ footer {
     font-size: 22.5px;
     text-decoration: underline;
 }
+
+.dropdown {
+    position: relative;
+    /*display: inline-block;*/
+    margin: 0 25px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: #f2f2f8;
+
+}
+
+/*.dropdown-content li a {*/
+/*    display: fle;*/
+/*    */
+/*}*/
+
+
+.show {display:block;}
 

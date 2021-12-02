@@ -17,16 +17,23 @@
 </head>
 <body>
 <header class="header">
-    <nav>
+    <nav class="header__nav">
         <ul>
             <li><a class="header-a" href="../index.html">Главная</a></li>
             <li><a class="header-a" href="../HTML_Pages/Portfolio.html">Портфолио</a></li>
             <li><a class="header-a" href="../HTML_Pages/Contact.html">Связаться</a></li>
-            <li><a class="header-a" href="../HTML_Pages/Experience.html"> Опыт </a></li>
-            <li><a class="header-a" href="../HTML_Pages/Gallery.html"> Галерея </a></li>
+            <div class="dropdown">
+                <a onclick="showMenu()" class="dropbtn">Навигация</a>
+                <div id="myDropdown" class="dropdown-content">
+                    <li> <a class="header-a"  href="../HTML_Pages/Experience.html">Опыт</a> </li>
+                    <li>  <a class="header-a"  href="../HTML_Pages/Gallery.html">Галерея</a> </li>
+                    <li> <a class="header-a"  href="../HTML_Pages/TodoList.html">Todo</a> </li>
+                </div>
+            </div>
         </ul>
     </nav>
 </header>
+
 <main>
     <section class="content" id="photo">
         <div class =" container content__container">
