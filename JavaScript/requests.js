@@ -41,7 +41,7 @@ window.addEventListener('load', () => {
             }
             button.disabled = false;
         } catch (error) {
-            alert("⚠ Что-то пошло не так");
+            alert("Error");
             preloader.classList.add('disabled');
             button.disabled = false;
         }

@@ -299,7 +299,6 @@ footer {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
     height: 50px;
     background: #f2f2f8;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -309,6 +308,7 @@ footer {
     footer {
         display: none;
     }
+
 }
 
 
