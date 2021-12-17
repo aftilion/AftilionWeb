@@ -20,12 +20,14 @@ window.addEventListener('load', () => {
         button.disabled = true;
         const card = document.getElementById("one-card").content.cloneNode(true);
         const card_body = card.getElementById("card-body");
+        const card_title_h1 = card.querySelector("h1");
         preloader.classList.remove('disabled');
 
         try {
             let response = await fetch('https://jsonplaceholder.typicode.com/posts/' + id);
             if (response.ok) {
                 let json = await response.json();
+                card_title_h1.innerHTML = json.title;
                 card_body.innerHTML = json.body;
                 id = id + 1;
                 sleep(1000);

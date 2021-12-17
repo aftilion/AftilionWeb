@@ -1,17 +1,19 @@
-
 .card {
     border: 5px ridge black;
     border-radius: 7px;
-    padding: 15px;
+    /*padding: 15px;*/
     max-width: 300px;
     margin: 10px 10px;
 }
 
 #cards {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    /*flex-direction: row;*/
+
+    grid-template-columns: 1fr 1fr 1fr;
+
     width: 100%;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 
 #add-card {
@@ -36,4 +38,17 @@
 .preloader-img {
     width: 250px;
     height: 250px;
+}
+
+@media screen and (max-width: 800px) {
+    #cards {
+        display: grid;
+        /*flex-direction: row;*/
+
+        grid-template-columns: 1fr 1fr;
+
+        width: 100%;
+        /*flex-wrap: wrap;*/
+    }
+
 }
