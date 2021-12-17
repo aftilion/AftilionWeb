@@ -8,6 +8,7 @@
     cursor: url("../Photos/cursor2.png") , pointer;
 }
 
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -72,9 +73,10 @@ header a {
 
 
 section {
-    padding: 40px 80px;
+    padding: 130px 80px;
     min-height: 100vh;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: auto;
 }
 .content {
     display: flex;
@@ -297,7 +299,6 @@ footer {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
     height: 50px;
     background: #f2f2f8;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -307,6 +308,7 @@ footer {
     footer {
         display: none;
     }
+
 }
 
 
